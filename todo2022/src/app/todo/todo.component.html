@@ -1,0 +1,17 @@
+<mat-list-item [class.complete]="toDo.complete">
+  <mat-checkbox [checked]="toDo.complete" (change)="this.completeChange.emit($event)">{{ toDo.task }}</mat-checkbox>
+  <ng-container matColumnDef="edit">
+    <td mat-cell *matCellDef="let todos">
+      <button mat-icon-button>
+        <mat-icon>edit</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+  <ng-container matColumnDef="delete">
+    <td mat-cell *matCellDef="let todos">
+      <button mat-icon-button (click)="deleteTodo(todo)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+</mat-list-item>
