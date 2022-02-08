@@ -14,7 +14,7 @@ npm run build
 npm start
 ```
 
-To run the client, cd into the `projects-angular` directory and run:
+To run the client, cd into the `todo2022` directory and run:
  
 ```bash
 npm install 
